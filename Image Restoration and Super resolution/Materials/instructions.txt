@@ -1,0 +1,16 @@
+Running the code for deblurring task:
+Download converteddata file from box and place it in the same folder as Deblur.py and run as aprun python Deblur.py
+
+Download noisydataset file from box and place it in the same folder as other python files and run as aprun python filename.py
+
+where filename is:
+resblocknew: for convolution deconvolution with skip connections
+
+withouDeconv:for full convolution network with skip connections with 
+MaxPooling and Upsampling instead of deconvolution layers
+
+withoutskip:for convolution deconvolution without skip connections
+
+Test:for predicting the output of a blur/noisy image
+
+evaluation: evaluates model for given set of test data returning psnr value
